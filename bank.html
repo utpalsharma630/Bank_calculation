@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div>
+        <h1 class="text-5xl text-center my-12">Functional <span class="font-medium">ABC Bank</span></h1>
+    </div>
+    <section>
+        <div class="md:w-9/12 m-auto grid grid-cols-3 gap-10 mt-16">
+            <div class=" w-50 bg-yellow-400 text-center text-white rounded-lg py-8">
+                <h2 class="text-3xl ">Deposit</h2>
+                <p class="text-3xl">$ <span id="add-deposit">00</span></p>
+            </div>
+            <div class=" w-50 bg-red-400 text-center text-white rounded-lg py-8">
+                <h2 class="text-3xl ">Withdraw</h2>
+                <p class="text-3xl">$ <span id="add-withdraw">00</span></p>
+            </div>
+            <div class=" w-50 bg-blue-400 text-center text-white rounded-lg py-8">
+                <h2 class="text-3xl ">Balance</h2>
+                <p class="text-3xl">$ <span id="balance">100</span></p>
+            </div>
+        </div>
+    </section>
+    <section class="md:w-9/12 m-auto my-10 flex gap-10">
+        <div class="w-[48%] bg-violet-400 text-center rounded-lg py-8">
+            <div >
+                <h2 class="text-3xl py-2 text-white">Your Deposit</h2>
+                <input id="deposit-input-field" class=" p-2 my-3 rounded" type="text" placeholder="$ Amount">
+            </div>
+            <button class="text-white px-5 py-2 bg-blue-800 my-3 rounded" id="deposit-field">Deposit</button>
+        </div>
+        <div class="w-[48%] bg-amber-400 text-center rounded-lg py-8">
+            <div >
+                <h2 class="text-3xl py-2 text-white">Your Withdraw</h2>
+                <input id="withdraw-input-field" class="p-2 my-3 rounded" type="text" placeholder="$ Amount">
+            </div>
+            <button class="text-white px-5 py-2 bg-blue-800 my-3 rounded" id="withdraw-field">Withdraw</button>
+        </div>
+    </section>
+
+    <script src="deposit.js"></script>
+    <script src="balance.js"></script>
+
+    <script src="withdraw.js"></script>
+</body>
+</html>
