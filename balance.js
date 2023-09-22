@@ -1,13 +1,3 @@
-// document.getElementById('deposit-field').addEventListener('click', function(){
-//     const addBalance=documnet.getElementById('deposit-input-field');
-    
-   
- 
-    
-// })
-
-
-
 
 document.getElementById('withdraw-field').addEventListener('click', function(){
     const newWithdraw=document.getElementById('withdraw-input-field');
@@ -22,7 +12,7 @@ document.getElementById('withdraw-field').addEventListener('click', function(){
     const addNewWithdraw=totalWithdraw-withdrawValue;
     console.log(addNewWithdraw);
     withdrawContent.innerText=addNewWithdraw;
-    // newWithdraw.value=' '
+    
 })
 
 
